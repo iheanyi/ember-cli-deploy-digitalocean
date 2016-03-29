@@ -44,10 +44,16 @@
     "ember-addon"
   ],
   "dependencies": {
+    "do-wrapper": "^3.5.0",
+    "ember-cli": "github:ember-cli/ember-cli",
     "ember-cli-babel": "^5.1.5",
-    "ember-cli-deploy-plugin": "^0.2.2"
+    "ember-cli-deploy-plugin": "^0.2.2",
+    "scp2": "^0.2.2",
+    "ssh2": "^0.5.0",
+    "yamljs": "^0.2.7"
   },
   "ember-addon": {
-    "configPath": "tests/dummy/config"
+    "configPath": "tests/dummy/config",
+    "after": "ember-cli-deploy-build"
   }
 }
