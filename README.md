@@ -20,7 +20,7 @@ This README outlines the details of collaborating on this Ember addon.
 
 ## Deploying
 Run `ember do:provision` in order to provision a droplet for usage with
-FastBoot. This step must be run in order for FastBoot to work correctly on your
+FastBoot. Note: The best droplet image to use is the `Node` one-click installer. This step must be run in order for FastBoot to work correctly on your
 droplet. After this is setup, just run `ember deploy <environment>` and you're
 good to go.
 
