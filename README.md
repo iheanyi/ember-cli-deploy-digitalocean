@@ -28,3 +28,7 @@ good to go.
 Please make sure you also have `ember-cli-deploy-build` installed. This may be
 further refined through the use of a lightning pack, but for now, please just
 install `ember-cli-deploy-build` as well.
+
+Thanks to Tom and his [Elastic
+Beanstalk](https://github.com/tomdale/ember-cli-deploy-elastic-beanstalk) plugin for a good starting/reference
+point.
