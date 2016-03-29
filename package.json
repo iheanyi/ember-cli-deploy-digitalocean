@@ -44,6 +44,7 @@
     "ember-addon"
   ],
   "dependencies": {
+    "chalk": "^1.1.3",
     "do-wrapper": "^3.5.0",
     "ember-cli": "github:ember-cli/ember-cli",
     "ember-cli-babel": "^5.1.5",
