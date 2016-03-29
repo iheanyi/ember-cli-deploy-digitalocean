@@ -23,3 +23,8 @@ Run `ember do:provision` in order to provision a droplet for usage with
 FastBoot. This step must be run in order for FastBoot to work correctly on your
 droplet. After this is setup, just run `ember deploy <environment>` and you're
 good to go.
+
+## Note
+Please make sure you also have `ember-cli-deploy-build` installed. This may be
+further refined through the use of a lightning pack, but for now, please just
+install `ember-cli-deploy-build` as well.
