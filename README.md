@@ -8,19 +8,15 @@ This README outlines the details of collaborating on this Ember addon.
 * `npm install`
 * `bower install`
 
-## Running
+## Environment Variables
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+* `DO_ACCESS_TOKEN` - Your DigitalOcean API key. Generate one
+  [https://cloud.digitalocean.com/settings/api/tokens](here).
+* `PRIVATE_KEY_DIR` - Location of your private SSH key used for your droplet.
+* `PASSPHRASE` - Passphrase for the SSH key.
 
-## Running Tests
-
-* `npm test` (Runs `ember try:testall` to test your addon against multiple Ember versions)
-* `ember test`
-* `ember test --server`
-
-## Building
-
-* `ember build`
-
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+## Deploying
+Run `ember do:provision` in order to provision a droplet for usage with
+FastBoot. This step must be run in order for FastBoot to work correctly on your
+droplet. After this is setup, just run `ember deploy <environment>` and you're
+good to go.
