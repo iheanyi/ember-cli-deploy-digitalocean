@@ -8,15 +8,42 @@ This README outlines the details of collaborating on this Ember addon.
 * `npm install`
 * `bower install`
 
-## Environment Variables
-
-* `DO_ACCESS_TOKEN` - Your DigitalOcean API key. Generate one
+## Necessary Environment Variables
+* `DO_ACCESS_TOKEN` - Your DigitalOcean API token. Generate one
   [here](https://cloud.digitalocean.com/settings/api/tokens).
-* `PRIVATE_KEY_PATH` - Location of your private SSH key used for your droplet.
-* `PASSPHRASE` - Passphrase for the SSH key.
-* `DROPLET_USERNAME` - Username to log into the droplet as (defaults to `root`)
-* `DROPLET_PASSWORD` - Password to log into the droplet as (can be left blank if
-  unused)
+
+## Configuration Options
+
+### privateKeyPath
+
+Location of your private SSH key, used for SSHing/SCPing into the droplet.
+
+Default: `process.env.PRIVATE_KEY_PATH`
+
+### environment
+
+The environment target for the FastBoot build, can be one of `development`,
+`staging`, or `production`.
+
+Default: `production`
+
+### passphrase
+
+The passphrase for the SSH key used to access the droplet.
+
+Default: `process.env.SSH_KEY_PASSPHRASE`
+
+### dropletUsername
+
+Username to log into the droplet as.
+
+Default: `process.env.DROPLET_USERNAME` or `root`.
+
+### dropletPassword
+
+Password to log into the droplet as (can be left blank if unused).
+
+Default: `process.env.DROPLET_PASSWORD`
 
 ## Deploying
 Run `ember do:provision` in order to provision a droplet for usage with
