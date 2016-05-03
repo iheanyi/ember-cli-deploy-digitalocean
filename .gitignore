@@ -8,6 +8,8 @@
 /node_modules
 /bower_components
 
+.env
+.env*
 .env.deploy*
 # misc
 /.sass-cache
