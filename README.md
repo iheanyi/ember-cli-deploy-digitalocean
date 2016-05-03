@@ -12,7 +12,7 @@ This README outlines the details of collaborating on this Ember addon.
 
 * `DO_ACCESS_TOKEN` - Your DigitalOcean API key. Generate one
   [here](https://cloud.digitalocean.com/settings/api/tokens).
-* `PRIVATE_KEY_DIR` - Location of your private SSH key used for your droplet.
+* `PRIVATE_KEY_PATH` - Location of your private SSH key used for your droplet.
 * `PASSPHRASE` - Passphrase for the SSH key.
 * `DROPLET_USERNAME` - Username to log into the droplet as (defaults to `root`)
 * `DROPLET_PASSWORD` - Password to log into the droplet as (can be left blank if
