@@ -45,8 +45,14 @@ else
   npm install -g ember-fastboot
 fi
 
+# Remove The Default Nginx Configuration
+rm /etc/nginx/sites/enabled/default
+
+# Install Fastboot App Server and Fastboot FS Notifier.
 npm install -g fastboot-app-server
 npm install -g fastboot-fs-notifier
+
+# Create the folder for storing the app releases.
 mkdir -p /opt/app/releases
 
 # Upload server.js and start it up if necessary.
