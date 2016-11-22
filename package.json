@@ -49,6 +49,8 @@
     "ember-cli": "github:ember-cli/ember-cli",
     "ember-cli-babel": "^5.1.5",
     "ember-cli-deploy-plugin": "^0.2.2",
+    "fastboot-app-server": "^1.0.0-rc.4",
+    "fastboot-fs-notifier": "^0.1.1",
     "rsvp": "^3.2.1",
     "scp2": "^0.2.2",
     "ssh2": "^0.5.0",
